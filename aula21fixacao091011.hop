@@ -1,0 +1,23 @@
+dec somat2Aux : num # num -> num;
+dec somat2 : num -> num;
+dec pot2Aux : num # num # num -> num;
+dec pot2 : num # num -> num;
+dec duplo_fat2Aux : num # num -> num;
+dec duplo_fat2 : num -> num;
+
+--- somat2Aux (0, x) <= x;
+--- somat2Aux (n, x) <= somat2Aux (n - 1, n + x);
+
+--- somat2 n <= somat2Aux (n, 0);
+
+--- pot2Aux (b, 0, x) <= x;
+--- pot2Aux (b, 1, x) <= b * x;
+--- pot2Aux (b, e, x) <= pot2Aux (b, e - 1, b * x);
+
+--- pot2 (b, e) <= pot2Aux (b, e, 1);
+
+--- duplo_fat2Aux (0, x) <= x;
+--- duplo_fat2Aux (1, x) <= x;
+--- duplo_fat2Aux (n, x) <= duplo_fat2Aux (n - 2, n * x);
+
+--- duplo_fat2 n <= duplo_fat2Aux (n, 1);

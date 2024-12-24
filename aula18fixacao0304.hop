@@ -1,0 +1,8 @@
+dec mdc : num # num -> num;
+dec hanoil : num -> num;
+
+--- mdc (a, 0) <= a;
+--- mdc (a, b) <= mdc (b, a mod b);
+
+--- hanoil 1 <= 1;
+--- hanoil n <= 1 + 2 * hanoil (n - 1);
