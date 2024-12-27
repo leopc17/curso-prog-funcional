@@ -1,0 +1,12 @@
+dec tamanho : list num -> num;
+dec qual_elemento : num # list num -> num;
+dec duplique : list num -> list num;
+
+--- tamanho [] <= 0;
+--- tamanho (x :: xs) <= 1 + tamanho xs;
+
+--- qual_elemento (1, x :: xs) <= x;
+--- qual_elemento (n, x :: xs) <= if tamanho xs /= n - 1 then error ("Posi‡Æo inv lida!") else qual_elemento (n - 1, xs);
+
+--- duplique [] <= [];
+--- duplique (x :: xs) <= x :: x :: duplique xs;

@@ -1,0 +1,17 @@
+dec intervalo : num # num -> list num;
+dec min : list num -> num;
+dec max : list num -> num;
+dec list_min_max : list num -> list num;
+
+--- intervalo (m, n) <= if n >= m then m :: intervalo (m + 1, n) else [];
+
+--- min [] <= error ("Lista Vazia!");
+--- min ([x]) <= x;
+--- min (x :: xs) <= if x < min xs then x else min xs;
+
+--- max [] <= error ("Lista Vazia!");
+--- max ([x]) <= x;
+--- max (x :: xs) <= if x > max xs then x else max xs;
+
+--- list_min_max [] <= error ("Lista Vazia!");
+--- list_min_max lista <= [min lista, max lista];

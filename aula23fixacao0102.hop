@@ -1,0 +1,18 @@
+dec mostra : list num -> list num;
+dec ultimo : list num -> num;
+dec remove_ultimo : list num -> list num;
+dec inverte : list num -> list num;
+
+--- mostra [] <= [];
+--- mostra (x :: xs) <= x :: mostra xs;
+
+--- ultimo [] <= error ("Lista Vazia!");
+--- ultimo ([x]) <= x;
+--- ultimo (x :: xs) <= ultimo xs;
+
+--- remove_ultimo [] <= error ("Lista Vazia!");
+--- remove_ultimo ([x]) <= [];
+--- remove_ultimo (x :: xs) <= x :: remove_ultimo xs;
+
+--- inverte [] <= [];
+--- inverte x <= ultimo x :: inverte (remove_ultimo x);
