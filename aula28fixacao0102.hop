@@ -1,0 +1,18 @@
+uses aula23fixacao0102;
+dec poe_ultimo : num # list num -> list num;
+dec faixa : num # num # num -> list num;
+dec comp : list num # (num -> truval) -> list num;
+dec multiplo : num # num -> truval;
+dec divisores : num -> list num;
+
+--- poe_ultimo (n, []) <= [n];
+--- poe_ultimo (n, x :: xs) <= x :: poe_ultimo (n, xs);
+
+--- faixa (i, f, p) <= if i > f then [] else i :: faixa (i + p, f, p);
+
+--- comp ([], func) <= [];
+--- comp (x :: xs, func) <= if func x then x :: comp (xs, func) else comp (xs, func);
+
+--- multiplo (n, m) <= if n mod m = 0 then true else false;
+
+--- divisores n <= inverte (comp (faixa (1, n + 1, 1), lambda x => multiplo (n, x)));

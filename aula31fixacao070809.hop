@@ -1,0 +1,14 @@
+uses aula28fixacao0102;
+dec div84 : num -> truval;
+dec lstdiv84 : num -> list num;
+dec multlst : list num -> num;
+dec multip_faixa : num # num -> num;
+
+--- div84 n <= n mod 8 = 4;
+
+--- lstdiv84 n <= comp (faixa (1, n, 1), lambda x => div84 x);
+
+--- multlst [] <= 1;
+--- multlst (x :: xs) <= x * multlst xs;
+
+--- multip_faixa (x, y) <= multlst (faixa (x, y, 1));
