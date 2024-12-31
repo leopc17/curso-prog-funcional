@@ -1,0 +1,10 @@
+uses aula33, aula30fixacao0506;
+dec labundante : num -> list num;
+dec impar : num -> truval;
+dec soma_impares : num -> num;
+
+--- labundante n <= filtro (faixa (1, n, 1), lambda x => abundante x);
+
+--- impar n <= if n mod 2 /= 0 then true else false;
+
+--- soma_impares n <= reducao (filtro (faixa (1, n, 1), lambda x => impar x), lambda (x, y) => x + y, 0);

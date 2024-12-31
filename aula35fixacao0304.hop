@@ -1,0 +1,7 @@
+uses aula34fixacao0102;
+dec quadrados : num # num -> list num;
+dec perfeito : num -> truval;
+
+--- quadrados (n, m) <= mapa (filtro (faixa (n, m, 1), lambda x => impar x), lambda x => pow (x, 2));
+
+--- perfeito n <= n = reducao (filtro (faixa (1, n - 1, 1), lambda x => multiplo (n, x)), lambda (x, y) => x + y, 0);
